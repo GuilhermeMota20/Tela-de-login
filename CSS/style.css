@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2? family = Open + Sans: wght @ 300; 400; 700 & display = swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.content {
+    background-color: white;
+    border-radius: 15px;
+    width: 960px;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.content:before {
+    content: "";
+    position: absolute;
+    background-color: orangered;
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.titulo {
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.titulo1 {
+    color: #fff;
+}
+.titulo2 {
+    color: orangered;
+}
+.descrição {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.c1d1 {
+    color: #fff;
+}
+.c2d1 {
+    color: #515353;
+}
+.botão{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 180px;
+    align-self: center;
+    border-width: 0px;
+    margin-top: 1rem;
+}
+.btn-1 {
+    background-color: transparent;
+    border: solid 1px #fff;
+    transition: background-color 1s;
+}
+.btn-1:hover {
+    background-color: #fff;
+    color: orangered;
+}
+.btn-2 {
+    background-color: orangered;
+    border: 1px solid orangered;
+    transition: background-color 1s;
+}
+.btn-2:hover {
+    background-color: #fff;
+    border: 1px solid orangered;
+    color: orangered; 
+}
+.conteudo1 {
+    display: flex;
+    /*display: none;*/
+}
+.conteudo1 .coluna2 {
+    z-index: 12;
+}
+.coluna1 {
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+.coluna2 {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rede-social {
+    margin: 10px 0;
+}
+.lista-social {
+    display: flex;
+    list-style-type: none;
+}
+.item-social {
+    border: 1px solid #515353;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #515353;
+    transition: background-color 0.8s;
+}
+.link-social:not(:first-child) {
+    margin-left: 10px;
+}
+.link-social:hover .item-social {
+    background-color: orangered;
+    color: #fff;
+    border: orangered
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+.formulario input {
+    height: 35px;
+    width: 100%;
+    border: none;
+    background-color: #ecf0f1;
+}
+.label1 {
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px
+}
+.modi-icon {
+    color: #515353;
+    padding: 0 5px;
+}
+.conteudo2 {
+    position: absolute;
+    display: flex;
+}
+.conteudo2 .coluna1{
+    order: 2;
+    z-index: -1;
+}
+.conteudo2 .coluna2 {
+    order: 1;
+    z-index: -1;
+}
+.password {
+    color: #34495e;
+    font-size: 14px;
+    text-align: center;
+}
+
+.prosseguir-js .conteudo1 .coluna1,
+.prosseguir-js .conteudo1 .coluna2 {
+    z-index: -1;
+}
+.prosseguir-js .conteudo2 .coluna1,
+.prosseguir-js .conteudo2 .coluna2 {
+    z-index: 12;
+}
+.prosseguir-js .content:before {
+    left: 60%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.registrar-js .conteudo2 .coluna1,
+.registrar-js .conteudo2 .coluna2 {
+    z-index: -1;
+}
+.registrar-js .conteudo1 .coluna1,
+.registrar-js .conteudo1 .coluna2 {
+    z-index: 12;
+}
+.registrar-js .content:before {
+    left: 0;
+}
+
